@@ -1,0 +1,26 @@
+##---------------Begin: proguard configuration common for all Android apps ----------
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+
+-dontpreverify
+-repackageclasses ''
+-allowaccessmodification
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes *Annotation*
+-dontoptimize
+
+
+# to produce useful obfuscated stack traces,which includes line numbers
+# http://proguard.sourceforge.net/manual/examples.html#stacktrace
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
+
+# for webview
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
+
+-keep public class cn.example.joim.webtest.bridge.** {*;}
+-keep public class cn.example.joim.webtest.model.** {*;}

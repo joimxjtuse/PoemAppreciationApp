@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link href="css/mui.indexedlist.css" rel="stylesheet" />
+		<style type="text/css">
+			h5 {
+				padding-top: 8px;
+				padding-bottom: 8px;
+				text-indent: 12px;
+			}
+			
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+				font-size: 15px;
+				margin-top: 8px;
+				color: #333;
+			}
+			
+			.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			
+			img {
+				border-radius: 70%;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+
+			<div style="padding: 10px 10px;" id="header">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">作者</a>
+					<a class="mui-control-item" href="#item2">作品</a>
+					<a class="mui-control-item" href="#item3">分类</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+
+					<div class="mui-content">
+						<div id='list' class="mui-indexed-list">
+							<div class="mui-indexed-list-search mui-input-row mui-search">
+								<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索机场">
+							</div>
+							<div class="mui-indexed-list-bar">
+								<a>商</a>
+								<a>周</a>
+								<a>秦</a>
+								<a>汉</a>
+								<a>三国</a>
+								<a>晋</a>
+								<a>南北</a>
+								<a>隋</a>
+								<a>唐</a>
+								<a>五代</a>
+								<a>宋</a>
+								<a>元</a>
+								<a>明</a>
+								<a>清</a>
+								<a>现代</a>
+							</div>
+							<div class="mui-indexed-list-alert"></div>
+							<div class="mui-indexed-list-inner">
+								<div class="mui-indexed-list-empty-alert">没有数据</div>
+								<ul class="mui-table-view">
+									<li data-group="商" class="mui-table-view-divider mui-indexed-list-group">商</li>
+									<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">阿克苏机场</li>
+									<li data-value="BPL" data-tags="ALaShanKou" class="mui-table-view-cell mui-indexed-list-item">阿拉山口机场</li>
+									<li data-group="周" class="mui-table-view-divider mui-indexed-list-group">周</li>
+									<li data-value="NAY" data-tags="BeiJingNanYuan" class="mui-table-view-cell mui-indexed-list-item">北京南苑机场</li>
+									<li data-value="PEK" data-tags="BeiJingShouDuGuoJi" class="mui-table-view-cell mui-indexed-list-item">北京首都国际机场</li>
+									<li data-group="秦" class="mui-table-view-divider mui-indexed-list-group">秦</li>
+									<li data-value="CZX" data-tags="ChangZhouBenNiu" class="mui-table-view-cell mui-indexed-list-item">常州奔牛机场</li>
+									<li data-value="CTU" data-tags="ChengDuShuangLiuGuoJi" class="mui-table-view-cell mui-indexed-list-item">成都双流国际机场</li>
+									<li data-value="CIF" data-tags="ChiFeng" class="mui-table-view-cell mui-indexed-list-item">赤峰机场</li>
+									<li data-group="汉" class="mui-table-view-divider mui-indexed-list-group">汉</li>
+									<li data-value="DNH" data-tags="DunHuang" class="mui-table-view-cell mui-indexed-list-item">敦煌机场</li>
+									<li data-group="三国" class="mui-table-view-divider mui-indexed-list-group">三国</li>
+									<li data-value="ENH" data-tags="EnShiXuJiaPing" class="mui-table-view-cell mui-indexed-list-item">恩施许家坪机场</li>
+									<li data-value="ERL" data-tags="ErLianHaoTeSaiWuSuGuoJi" class="mui-table-view-cell mui-indexed-list-item">二连浩特赛乌苏国际机场</li>
+									<li data-group="晋" class="mui-table-view-divider mui-indexed-list-group">晋</li>
+									<li data-value="FUG" data-tags="FuYangXiGuan" class="mui-table-view-cell mui-indexed-list-item">阜阳西关机场</li>
+									<li data-value="FOC" data-tags="FuZhouChangLeGuoJi" class="mui-table-view-cell mui-indexed-list-item">福州长乐国际机场</li>
+									<li data-group="南北" class="mui-table-view-divider mui-indexed-list-group">南北</li>
+									<li data-value="CAN" data-tags="GuangZhouBaiYunGuoJi" class="mui-table-view-cell mui-indexed-list-item">广州白云国际机场</li>
+									<li data-value="KWL" data-tags="GuiLinLiangJiangGuoJi" class="mui-table-view-cell mui-indexed-list-item">桂林两江国际机场</li>
+									<li data-value="KWE" data-tags="GuiYangLongDongBaoGuoJi" class="mui-table-view-cell mui-indexed-list-item">贵阳龙洞堡国际机场</li>
+									<li data-group="隋" class="mui-table-view-divider mui-indexed-list-group">隋</li>
+									<li data-value="HET" data-tags="HuHeHaoTeBaiTaGuoJi" class="mui-table-view-cell mui-indexed-list-item">呼和浩特白塔国际机场</li>
+									<li data-value="HIA" data-tags="HuaiAnLianShui" class="mui-table-view-cell mui-indexed-list-item">淮安涟水机场</li>
+									<li data-value="TXN" data-tags="HuangShanTunXiGuoJi" class="mui-table-view-cell mui-indexed-list-item">黄山屯溪国际机场</li>
+									<li data-group="唐" class="mui-table-view-divider mui-indexed-list-group">唐</li>
+									<li data-value="JIU" data-tags="JiuJiangLuShan" class="mui-table-view-cell mui-indexed-list-item">九江庐山机场</li>
+									<li data-value="JZH" data-tags="JiuZhaiHuangLong" class="mui-table-view-cell mui-indexed-list-item">九寨黄龙机场</li>
+									<li data-group="五代" class="mui-table-view-divider mui-indexed-list-group">五代</li>
+									<li data-value="KCA" data-tags="KuCheGuiZi" class="mui-table-view-cell mui-indexed-list-item">库车龟兹机场</li>
+									<li data-value="KRL" data-tags="KuErLe" class="mui-table-view-cell mui-indexed-list-item">库尔勒机场</li>
+									<li data-value="KMG" data-tags="KunMingWuJiaBaGuoJi" class="mui-table-view-cell mui-indexed-list-item">昆明巫家坝国际机场</li>
+									<li data-group="宋" class="mui-table-view-divider mui-indexed-list-group">宋</li>
+									<li data-value="LZH" data-tags="LiuZhouBaiLian" class="mui-table-view-cell mui-indexed-list-item">柳州白莲机场</li>
+									<li data-value="LCX" data-tags="LongYanGuanZhiShan" class="mui-table-view-cell mui-indexed-list-item">龙岩冠豸山机场</li>
+									<li data-value="LZO" data-tags="LuZhouLanTian" class="mui-table-view-cell mui-indexed-list-item">泸州蓝田机场</li>
+									<li data-value="LYA" data-tags="LuoYangBeiJiao" class="mui-table-view-cell mui-indexed-list-item">洛阳北郊机场</li>
+									<li data-group="元" class="mui-table-view-divider mui-indexed-list-group">元</li>
+									<li data-value="NZH" data-tags="ManZhouLiXiJiao" class="mui-table-view-cell mui-indexed-list-item">满洲里西郊机场</li>
+									<li data-value="MIG" data-tags="MianYangNanJiao" class="mui-table-view-cell mui-indexed-list-item">绵阳南郊机场</li>
+									<li data-value="OHE" data-tags="MoHeGuLian" class="mui-table-view-cell mui-indexed-list-item">漠河古莲机场</li>
+									<li data-value="MDG" data-tags="MuDanJiangHaiLang" class="mui-table-view-cell mui-indexed-list-item">牡丹江海浪机场</li>
+									<li data-group="明" class="mui-table-view-divider mui-indexed-list-group">明</li>
+									<li data-value="NTG" data-tags="NanTongXingDong" class="mui-table-view-cell mui-indexed-list-item">南通兴东机场</li>
+									<li data-value="NNY" data-tags="NanYangJiangYing" class="mui-table-view-cell mui-indexed-list-item">南阳姜营机场</li>
+									<li data-value="NGB" data-tags="NingBoLiSheGuoJi" class="mui-table-view-cell mui-indexed-list-item">宁波栎社国际机场</li>
+									<li data-group="清" class="mui-table-view-divider mui-indexed-list-group">清</li>
+									<li data-value="SYM" data-tags="PuErSiMao" class="mui-table-view-cell mui-indexed-list-item">普洱思茅机场</li>
+									<li data-group="现代" class="mui-table-view-divider mui-indexed-list-group">现代</li>
+									<li data-value="NDG" data-tags="QiQiHaErSanJiaZi" class="mui-table-view-cell mui-indexed-list-item">齐齐哈尔三家子机场</li>
+									<li data-value="SHP" data-tags="QinHuangDaoShanHaiGuan" class="mui-table-view-cell mui-indexed-list-item">秦皇岛山海关机场</li>
+									<li data-value="TAO" data-tags="QingDaoLiuTingGuoJi" class="mui-table-view-cell mui-indexed-list-item">青岛流亭国际机场</li>
+									<li data-value="JUZ" data-tags="QuZhou" class="mui-table-view-cell mui-indexed-list-item">衢州机场</li>
+									<li data-value="JJN" data-tags="QuanZhouJinJiang" class="mui-table-view-cell mui-indexed-list-item">泉州晋江机场</li>
+									<li data-value="ZUH" data-tags="ZhuHaiSanZao" class="mui-table-view-cell mui-indexed-list-item">珠海三灶机场</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			
+				<div id="item2" class="mui-control-content">
+
+					<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+						<li class="mui-table-view-cell">
+							<div class="mui-table">
+								<div class="mui-table-cell mui-col-xs-10">
+									<h4 class="mui-ellipsis">水调歌头</h4>
+									<p class="mui-h6 mui-ellipsis">Hi，李明明，申请交行信息卡，100元等你拿，李明明，申请交行信息卡，100元等你拿，</p>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2 mui-text-right">
+									<span class="mui-h6">[宋]姓起机</span>
+								</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="mui-table">
+								<div class="mui-table-cell mui-col-xs-10">
+									<h4 class="mui-ellipsis-2">董行成</h4>
+									<p class="mui-h6 mui-ellipsis">申请交行信息卡，100元等你拿，</p>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2 mui-text-right">
+									<span class="mui-h6">[秦]无名</span>
+
+								</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="mui-table">
+								<div class="mui-table-cell mui-col-xs-10">
+									<h4 class="mui-ellipsis">水调歌头</h4>
+									<p class="mui-h6 mui-ellipsis">Hi，李明明，申请交行信息卡，100元等你拿，李明明，申请交行信息卡，100元等你拿，</p>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2 mui-text-right">
+									<span class="mui-h6">[宋]姓起机</span>
+								</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="mui-table">
+								<div class="mui-table-cell mui-col-xs-10">
+									<h4 class="mui-ellipsis-2">董行成</h4>
+									<p class="mui-h6 mui-ellipsis">申请交行信息卡，100元等你拿，</p>
+								</div>
+								<div class="mui-table-cell mui-col-xs-2 mui-text-right">
+									<span class="mui-h6">[秦]无名</span>
+
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			
+				<div id="item3" class="mui-control-content ">
+					<h5 style="background-color:#efeff4">选集</h5>
+
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/shuijiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">诗文</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/muwu.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">词语</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#"><img class="mui-media-object" src="images/cbd.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">Color of SIP CBD</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/yuantiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">静静</div>
+							</a>
+						</li>
+
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/shuijiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">幸福</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/muwu.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">想要</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#"><img class="mui-media-object" src="images/cbd.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">Color</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/yuantiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">世界</div>
+							</a>
+						</li>
+					</ul>
+
+					<h5 style="background-color:#efeff4">主题</h5>
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/shuijiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">诗文</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/muwu.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">词语</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#"><img class="mui-media-object" src="images/cbd.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">Color of SIP CBD</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/yuantiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">静静</div>
+							</a>
+						</li>
+
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/shuijiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">幸福</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/muwu.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">想要</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#"><img class="mui-media-object" src="images/cbd.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">Color</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3">
+							<a href="#">
+								<img class="mui-media-object" src="images/yuantiao.jpg" style="width: 100px;height: 100px;">
+								<div class="mui-media-body">世界</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				
+			</div>
+
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<!--<script src="js/update.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/mui.indexedlist.js"></script>
+		<script>
+			mui.init();
+			mui.ready(function() {
+				var header = document.querySelector('header.mui-bar');
+				var list = document.getElementById('list');
+				//calc hieght
+				list.style.height = (document.body.offsetHeight) + 'px';
+				//create
+				window.indexedList = new mui.IndexedList(list);
+			});
+		</script>
+	</body>
+
+</html>
